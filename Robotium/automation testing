@@ -1,0 +1,53 @@
+
+
+
+
+To run in command line
+======================
+1) install the original apk file using following command
+     ./adb install AndroidCalculator.apk 
+2) install the test apk file
+     ./adb install AndroidCalculatorTest.apk 
+3) run the test using following command to execute whole test case
+./adb shell am instrument -w com.calculator.test/android.test.InstrumentationTestRunner
+
+run following command to any particular testcase (i.e class and method name)
+./adb shell am instrument -e class <classname>#methodname com.example.sampleandroid.test/android.test.InstrumentationTestRunner
+Example:
+./adb shell am instrument -e class com.example.sampleandroid.test.MainContentProviderTest com.example.sampleandroid.test/android.test.InstrumentationTestRunner
+
+
+where com.calculator.test is the package name and android.test.InstrumentationTestRunner is the instrumentation name which you can get from <instrumentation> in Android Manifest
+
+Let us assume there are 4 difference modules needs to be tested if there is any failure in any one testcase it will not execute the remaining
+
+
+android.test.InstrumentationTestRunner
+=======================================
+Minimum requirement is API level 16 or above
+ant tool needs to be installed
+to check list of devices use following command
+./android list targets
+
+go to tools directory  
+cd /home/sunil/Development/android-sdk-linux/tools/
+./android create uitest-project -n UIAutomationTest -t 6 -p /home/sunil/workspace/UIAutomationTest
+now a build will be generated if not generated before, otherwise build.xml file will be updated
+go to project directory (where build.xml exists)
+ cd /home/sunil/workspace/UIAutomationTest
+build using following command
+ant build
+go to platform-tools 
+cd /home/sunil/Development/android-sdk-linux/platform-tools/
+push the jar file
+./adb push /home/sunil/workspace/UIAutomationTest/bin/UIAutomationTest.jar /data/local/tmp/
+run it using following command
+./adb shell uiautomator runtest UIAutomationTest.jar -c com.calculator.test.AddContactTest
+
+
+opn uiautomator
+==============
+
+sunil@sunil-desktop:~/Development/android-sdk-linux/tools$ ./uiautomatorviewer
+
+

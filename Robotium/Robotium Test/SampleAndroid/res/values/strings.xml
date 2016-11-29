@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="priorities">
+        <item>Urgent</item>
+        <item>Reminder</item>
+    </string-array>
+    
+    
+    
+    
+    <string name="app_name">SampleAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello Sunil!</string>
+    <string name="btn_register">Register Receiver</string>
+    <string name="btn_goto_service">Go to Service</string>
+    <string name="btn_goto_calculator">Open Calculator</string>
+    <string name="btn_goto_provider">Open Provider</string>
+    
+    
+    
+    <string name="btn_unregister">Un Register Receiver</string>
+    <string name="service_started">Example Service started</string> 
+    <string name="service_label">Example Service Label</string> 
+    <string name="hello">Enter two values and click on Calculate to multiply them.</string>
+    <string name="txtFirstNumber">Enter First Number</string>
+    <string name="txtSecondNumber">Enter Second Number</string>
+    <string name="txtSpace"></string>
+    
+    <string name="no_todos">Currently there are no Todo items maintained</string>
+  <string name="menu_insert">Add Item</string>
+  <string name="menu_delete">Delete Todo</string>
+  <string name="todo_summary">Summary</string>
+  <string name="todo_description">Delete Todo</string>
+  <string name="todo_edit_summary">Summary</string>
+  <string name="todo_edit_description">Description</string>
+  <string name="todo_edit_confirm">Confirm</string>
+
+</resources>

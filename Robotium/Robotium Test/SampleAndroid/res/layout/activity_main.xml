@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >    
+    <Button 
+        android:id="@+id/btnSendSMS"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register"
+        />
+    <Button 
+        android:id="@+id/btnGotoService"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goto_service"
+        />
+    <Button 
+        android:id="@+id/btnGotoCalculator"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goto_calculator"
+        />
+    <Button 
+        android:id="@+id/btnGotoProvider"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goto_provider"
+        />
+
+</LinearLayout>
